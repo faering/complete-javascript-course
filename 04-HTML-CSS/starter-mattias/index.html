@@ -1,0 +1,59 @@
+<!-- HTML (Hyper-text Markup Language) is built up of elements -->
+
+<!-- SHORTCUT TO CREATE THE BARE-BONES STRUCTURE OF HTML (VS Code): !+tab -->
+
+<!-- "DOCTYPE html" identifies the document as being HTML5 -->
+<!DOCTYPE html>
+<!-- All HTML code starts with the "html" element -->
+<!-- the "head" element contains the page settings (eg. title element etc.) -->
+<!-- the "head" element also contains CSS styles and favicons etc. -->
+<!-- the "head" element is the description of the page -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- "link" element to link to an external CSS file -->
+    <!-- "href" attribute specifies file name -->
+    <!-- "rel" attribute specifies the relationship between the linked and current documents -->
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Learning HTML and CSS</title>
+  </head>
+
+  <!-- the "body" element contains what will be shown on the page -->
+  <body>
+    <!-- "h1" is a heading element, 1 stands for 1st level heading -->
+    <h1>JavaScript is fun, but so are HTML and CSS</h1>
+    <!-- "p" is a paragraph element -->
+    <p class="first">
+      You can learn JavaScript without HTML and CSS, but for DOM manipulation
+      it's useful to have some basic ideas of HTML and CSS. I have been through
+      this course and you can see my code
+
+      <!-- "a" is an anchor element -->
+      <!-- in-line element, which means it will be inline with the text -->
+      <!-- "href" attribute is used to link to a source -->
+      <a href="https://github.com/faering/complete-javascript-course">here</a>.
+    </p>
+
+    <h2>Heading Level 2</h2>
+    <p class="second">Just another paragraph.</p>
+    <!-- "img" element is used to display images -->
+    <!-- "src" attribute to define the source of the image -->
+    <!-- the image element does not have a closing tag, only "/>" -->
+    <img
+      id="course-image"
+      src="https://images.unsplash.com/photo-1643230353473-8b4e8b60d28f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    />
+
+    <form id="your-name">
+      <h2>Your Name Here</h2>
+      <p class="first">Please fill in this form:</p>
+
+      <input type="text" placeholder="Write your name here ..." />
+      <button>OK!</button>
+    </form>
+  </body>
+</html>

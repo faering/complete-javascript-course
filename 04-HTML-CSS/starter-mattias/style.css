@@ -1,0 +1,60 @@
+/* use the "*" selector to select all elements globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall page style specifications are in the "body" element */
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 75px;
+}
+
+h1 {
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* use "p" selector to style all paragraphs */
+p {
+  margin-bottom: 10px;
+}
+
+/* use the "." selector to refer to elements with "class" attribute */
+.first {
+  color: forestgreen;
+}
+
+/* use "#" selector to refer to elements with "id" attribute */
+#your-name {
+  background-color: rgb(228, 219, 102);
+  /* border: linewidth linestyle color */
+  border: 2px solid #444;
+  width: 400px;
+  padding: 25px;
+  margin-top: 1cm;
+}
+
+/* use "," to apply same styling on several selectors */
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#course-image {
+  width: 450px;
+}
+
+/* access h2 inside form container like this */
+#your-name h2 {
+  color: indianred;
+}
